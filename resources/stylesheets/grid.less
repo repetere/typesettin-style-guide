@@ -1,0 +1,76 @@
+.ts-col-span{
+    float:left;
+    box-sizing: border-box;
+}
+
+.ts-row{
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .ts-col-span12{
+        .ts-col-span;
+        width: percentage(12 / 12);
+    }
+    .ts-col-span11{
+        .ts-col-span;
+        width: percentage(11 / 12);
+    }
+    .ts-col-span10{
+        .ts-col-span;
+        width: percentage(10 / 12);
+    }
+    .ts-col-span9{
+        .ts-col-span;
+        width: percentage(9 / 12);
+    }
+    .ts-col-span8{
+        .ts-col-span;
+        width: percentage(8 / 12);
+    }
+    .ts-col-span7{
+        .ts-col-span;
+        width: percentage(7 / 12);
+    }
+    .ts-col-span6{
+        .ts-col-span;
+        width: percentage(6 / 12);
+    }
+    .ts-col-span5{
+        .ts-col-span;
+        width: percentage(5 / 12);
+    }
+    .ts-col-span4{
+        .ts-col-span;
+        width: percentage(4 / 12);
+    }
+    .ts-col-span3{
+        .ts-col-span;
+        width: percentage(3 / 12);
+    }
+    .ts-col-span2{
+        .ts-col-span;
+        width: percentage(2 / 12);
+    }
+    .ts-col-span1{
+        .ts-col-span;
+        width: percentage(1 / 12);
+    }
+    .ts-col-nofloat{
+        float:none;
+        margin: auto;
+    }
+
+    table.ts-table{
+        tr{
+            td,th{
+                float: none;
+                box-sizing:initial;
+            }
+        }
+    }
+}

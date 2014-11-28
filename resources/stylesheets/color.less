@@ -1,0 +1,61 @@
+@textcolor: rgba(0, 0, 0, 0.8);
+@_pea-color-warn :#fcd04b;
+@_pea-color-error :#e74c3c;
+@_pea-color-success :#2ac56c;
+@_pea-color-info :#4593e3;
+@_reader-color-red : #f1103a;
+@_reader-color-darkblue : #34495e;
+
+._pea-color-warn{
+    background: #fcd04b;
+    color:#fff;
+    &:hover{
+        background-color:darken(#fcd04b, 10%);          
+    }
+    &._pea-button{
+        border:0.1em solid darken(#fcd04b, 10%);
+    }
+}
+._pea-color-error{
+    background: #e74c3c;
+    color:#fff;
+    &:hover{
+        background-color:darken(#e74c3c, 10%);          
+    }
+    &._pea-button{
+        border:0.1em solid darken(#e74c3c, 10%);
+    }
+}
+._pea-color-success{
+    background: #2ac56c;
+    color: #ffffff;
+    &:hover{
+        background-color:darken(#2ac56c, 10%);          
+    }
+    &._pea-button{
+        border:0.1em solid darken(#2ac56c, 10%);
+    }
+}
+._pea-color-info{
+    background: #4593e3;
+    color: #ffffff;
+    &:hover{
+        background-color:darken(#4593e3, 10%);          
+    }
+    &._pea-button{
+        border:0.1em solid darken(#4593e3, 10%);
+    }
+}
+._pea-color-default{
+    // background: #000;
+    // color: #ffffff;
+    // border: 0.1em solid #bcbcbc;
+    background: #eaeaea;
+    color: #333;
+    &:hover{
+        background-color:darken(#eaeaea, 10%);          
+    }
+    &._pea-button{
+        border: 1px solid darken(#efefef,20%);
+    }
+}

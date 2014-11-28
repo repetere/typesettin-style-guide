@@ -1,0 +1,76 @@
+@sansseriffamily: pontano,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+.ts-text-right{
+    text-align: right;
+}
+
+.ts-text-left{
+    text-align: left;
+}
+
+.ts-text-center{
+    text-align: center;
+}
+
+.ts-text-justify{
+    text-align: justify;
+}
+
+.ts-text-small{
+    font-size:85%;
+}
+
+.ts-pull-left{
+    float: left;
+}
+.ts-pull-right{
+    float: right;
+}
+
+.ts-hidden{
+    display: none;
+}
+
+.ts-container{
+	margin: 0 2em;
+}
+.ts-text-container{
+	max-width: 40em;
+    margin: auto;
+}
+@heading-size:3em; 
+h1,h2,h3,h4,h5,h6{
+    font-family: @sansseriffamily;
+    line-height: 120%;
+    margin: 1em 0 0em;
+    small{
+        color:lighten(@textcolor, 85%);
+    }
+}
+p{
+    margin: 1.5em 0 0.5em;
+}
+h1{
+    font-size: @heading-size;
+}
+h2{
+    font-size: @heading-size*(7/8);
+}
+h3{
+    font-size: @heading-size*(6/8);
+}
+h4{
+    font-size: @heading-size*(5/8);
+}
+h5,h6{
+    font-size: @heading-size*(4/8);
+}
+blockquote{
+    font-family: @sansseriffamily;
+    margin: 1.5em 3em;
+    border-top: 1px solid lighten(@textcolor, 85%);
+    border-bottom: 1px solid lighten(@textcolor, 85%);
+    p{
+        margin:1em 0;
+    }
+}
