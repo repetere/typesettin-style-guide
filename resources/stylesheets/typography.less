@@ -42,7 +42,7 @@
 h1,h2,h3,h4,h5,h6{
     font-family: @sansseriffamily;
     line-height: 120%;
-    margin: 1em 0 0em;
+    margin: 1em 0 -0.5em;
     small{
         color:lighten(@textcolor, 85%);
     }
@@ -64,6 +64,18 @@ h4{
 }
 h5,h6{
     font-size: @heading-size*(4/8);
+}
+ol{
+    li{
+
+    }
+    li::marker { 
+      width: 30px;
+      text-align: right;
+      margin-right: 10px;
+      display: inline-block;
+      background: #000;
+    }
 }
 blockquote{
     font-family: @sansseriffamily;
