@@ -1,8 +1,18 @@
+@import "variables.less";
+
 .ts-col-span{
     float:left;
     box-sizing: border-box;
 }
 
+
+.ts-container{
+    margin: 0 2em;
+}
+.ts-text-container{
+    max-width: @maxtextwidth;
+    margin: auto;
+}
 .ts-row{
     &:before,
     &:after {
@@ -113,14 +123,44 @@
 .ts-width-25{
     width: 25%;
 }
-
+.ts-z-index-1000{
+  z-index: 1000;  
+}
+.ts-z-index-100{
+  z-index: 100;  
+}
+.ts-z-index-10{
+  z-index: 10;  
+}
+.ts-z-index-1{
+  z-index: 1;  
+}
+.ts-no-x-overflow{
+    overflow: auto;
+    overflow-x: hidden;
+}
+.ts-container-margin{
+    margin-top:5em;
+    margin-bottom:5em;
+}
 .ts-ul-inline-block{
     li{
         display: inline-block;
+
+    }
+    &.ts-li-horz-spacing{
+        li{
+            margin-left: 1em;
+            margin-right: 1em;   
+        }
     }
 }
+
 .ts-position-absolute{
     position: absolute;
+}
+.ts-position-fixed{
+    position: fixed;
 }
 
 .ts-position-relative{
@@ -130,9 +170,24 @@
 .ts-bottom{
     bottom: 0;
 }
+
+.ts-top{
+    top: 0;
+}
 .ts-vertical-center{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+}
+
+.ts-pull-left{
+    float: left;
+}
+.ts-pull-right{
+    float: right;
+}
+
+.ts-hidden{
+    display: none;
 }

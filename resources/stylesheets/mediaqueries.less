@@ -1,0 +1,91 @@
+
+.ts{
+    .ts-visible-micro,.ts-visible-small,.ts-visible-large{
+        display: initial;
+    }
+    .ts-hidden-micro,.ts-hidden-smalll,.ts-hidden-large{
+        display: initial;     
+    }
+}
+//micro screen
+@media screen and (max-width: @screenMicro) {
+    .ts{
+        .ts-hidden-micro{
+            display: none;     
+        }
+        h1,h2,h3,h4,h5,h6{
+            line-height: 120%;
+            margin: 1em 0 -0.5em;
+        }
+        h1{
+            font-size: (@heading-size*@headingMicro);
+        }
+        h2{
+            font-size: (@heading-size*(7/8) * @headingMicro);
+        }
+        h3{
+            font-size: (@heading-size*(6/8) * @headingMicro);
+        }
+        h4{
+            font-size: (@heading-size*(5/8) * @headingMicro);
+        }
+        h5,h6{
+            font-size: (@heading-size*(4/8) * @headingMicro);
+        }
+    }
+}
+//small/mobile
+@media screen and (max-width: @screenSmall) {
+    .ts{
+        .ts-hidden-small{
+            display: none;     
+        }
+        h1,h2,h3,h4,h5,h6{
+            line-height: 120%;
+            margin: 1em 0 -0.5em;
+        }
+        h1{
+            font-size: (@heading-size*@headingSmall);
+        }
+        h2{
+            font-size: (@heading-size*(7/8) * @headingSmall);
+        }
+        h3{
+            font-size: (@heading-size*(6/8) * @headingSmall);
+        }
+        h4{
+            font-size: (@heading-size*(5/8) * @headingSmall);
+        }
+        h5,h6{
+            font-size: (@heading-size*(4/8) * @headingSmall);
+        }
+    }
+}
+
+//large screen
+@media screen and (min-width: @screenLarge) {
+    .ts{
+        .ts-hidden-large{
+            display: none;     
+        }
+        h1,h2,h3,h4,h5,h6{
+            line-height: 120%;
+            margin: 1em 0 -0.5em;
+        }
+        h1{
+            font-size: (@heading-size*@headingLarge);
+        }
+        h2{
+            font-size: (@heading-size*(7/8) * @headingLarge);
+        }
+        h3{
+            font-size: (@heading-size*(6/8) * @headingLarge);
+        }
+        h4{
+            font-size: (@heading-size*(5/8) * @headingLarge);
+        }
+        h5,h6{
+            font-size: (@heading-size*(4/8) * @headingLarge);
+        }
+    }
+}
