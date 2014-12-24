@@ -95,7 +95,7 @@ module.exports = function (grunt) {
 				cwd: 'example',
 				expand: true,
 				src: '**/*.*',
-				dest: '../../../example/themes/periodicjs.theme.periodical',
+				dest: '../../public/typesettin_style_guide',
 			},
 		},
 		less: {

@@ -2,7 +2,7 @@
   "title": "Typesettin Style Guide",
   "name": "typesettin-style-guide",
   "description": "lightweight css framework with minimal styling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
@@ -15,10 +15,10 @@
     "url": "git@github.com:typesettin/typesettin-style-guide.git"
   },
   "dependencies": {
-    "classie": ">=0.1.0",
-    "util-extend": ">=1.0.1"
   },
   "devDependencies": {
+    "classie": ">=0.1.0",
+    "util-extend": ">=1.0.1",
     "browserify": "~4.2.1",
     "chai": "1.9.1",
     "grunt": ">=0.4.5",
