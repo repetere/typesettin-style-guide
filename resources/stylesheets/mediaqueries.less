@@ -1,12 +1,55 @@
 
 .ts{
+    nav{
+        ul,
+        .ts-nav-collapse{
+            margin: .5em auto;
+        }
+    }
     .ts-visible-micro,.ts-visible-small,.ts-visible-large{
         display: initial;
     }
     .ts-hidden-micro,.ts-hidden-smalll,.ts-hidden-large{
         display: initial;     
     }
+    .ts-nav-collapse{
+
+        .ts-nav-collapse-dropdown{
+            display: none;
+            padding: 0em 1em;
+            margin: 0;
+            li{
+                padding-top: .25em;
+                padding-bottom: .25em;
+            }
+        }
+        &:hover{
+            .ts-nav-collapse-dropdown{
+                display: block;
+            }
+        }
+    }
 }
+
+//nav collapse
+@media screen and (min-width: @navcollaspe){
+    .ts{
+        .ts-nav-collapse{
+            .ts-nav-collapse-button{
+                display: none;
+            }
+            .ts-nav-collapse-dropdown{
+                display: block;
+                li{
+                    display: inline-block;
+                    padding-right: .25em;
+                    padding-left: .25em;
+                }
+            }
+        }
+    }
+}
+
 //micro screen
 @media screen and (max-width: @screenMicro) {
     .ts{
@@ -31,6 +74,9 @@
         }
         h5,h6{
             font-size: (@heading-size*(4/8) * @headingMicro);
+        }
+        .ts-container{
+            margin: 0 1em;
         }
     }
 }
@@ -58,6 +104,9 @@
         }
         h5,h6{
             font-size: (@heading-size*(4/8) * @headingSmall);
+        }
+        .ts-container{
+            margin: 0 1em;
         }
     }
 }
