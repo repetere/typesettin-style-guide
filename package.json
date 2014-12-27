@@ -2,7 +2,7 @@
   "title": "Typesettin Style Guide",
   "name": "typesettin-style-guide",
   "description": "lightweight css framework with minimal styling",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
