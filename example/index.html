@@ -1,18 +1,120 @@
 <html class="ts">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ts ts-height-100">
 
 <head>
-  <title>Typesettin Style Guide!</title>
+  <title>Typesettin Style Guide</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Yaw Joseph Etse" />
+  <meta name="description" content="fullPage full-screen backgrounds." />
+  <meta name="keywords" content="fullpage,screen,fullscreen,backgrounds,full-screen" />
+  <meta name="Resource-type" content="Document" />
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" type="text/css" href="stylesheets/typesettin-style-guide.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheets/example.css">
 </head>
 
-<body>
-  <section class="ts-text-container">
+<body class="ts-height-100 ts-no-x-overflow">
+  <header class="ts-position-fixed ts-top ts-width-100 ts-z-index-1000 ts-bg-text-primary-color ts-serif-clean">
+  <nav class="ts-container ts-top">
+    <menuitem class="ts-pull-right ts-nav-collapse">
+      <div class="ts-nav-collapse-button ts-text-right">
+        [-]
+      </div>
+      <ul class="ts-nav-collapse-dropdown ts-z-index-1000 ts-bg-text-primary-color ts-position-absolute ts-position-right ts-no-padding ts-list-style-none ts-li-horz-spacing">
+        <li><a href="#color">Colors</a>
+        </li>
+        <li><a href="#typography">Typography</a>
+        </li>
+        <li><a href="#layout">Layout</a>
+        </li>
+        <li><a href="#element">Elements</a>
+        </li>
+        <li><a href="#responsive">Responsive</a>
+        </li>
+        <li><a href="#customize">Customize</a>
+        </li>
+      </ul>
+    </menuitem>
+    <menuitem class="ts-pull-left">
+      <ul class="ts-ul-inline-block ts-no-padding">
+        <li><a href="#top" class="ts-text-big ts-text-bold">Style Guide</a>
+        </li>
+      </ul>
+    </menuitem>
+  </nav>
+</header>
+    <main class="ts-container ts-height-100 ">
+      <a name="#top"></a>
+<article class="ts-text-container  ts-height-100">
+  <section class="ts-vertical-center ts-width-66 ts-height-max-80 ts-no-x-overflow">
+    <h1 class="ts-text-center">Boilerplate CSS Workstream</h1>
+    <summary class="ts-text-justify">This style guide provides a boilerplate CSS template for creating HTML5/Responsive user interfaces that are customizable with LESS.</summary>
+  </section>
+</article>
+<hr>
+        <a name="#gettingstarted"></a>
+<article class="ts-text-container">
+  <section class="ts-container">
+    <h2>Getting started
+      <small>Secondary text</small>
+    </h2>
     <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <blockquote>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    </blockquote>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   </section>
+</article>
+<hr>
+          <a name="#color"></a>
+<article class="ts-text-container ts-height-100">
+  <section class="ts-text-container">
+    <h2>Colors
+      <small>Standard Palette</small>
+    </h2>
+    <p>There are eight basic colors, they can be customized by modifying
+      <span class="ts-code">variables.less</span>
+    </p>
+  </section>
+  <section class="ts-text-container">
+    <table class="ts ts-width-100 ts-text-center">
+      <tr>
+        <td class="ts-bg-dark-primary-color">Dark Primary Color</td>
+        <td class="ts-bg-primary-color">Primary Color</td>
+        <td class="ts-bg-light-primary-color">Light Primary Color</td>
+        <td class="ts-bg-text-primary-color">Text Primary Color</td>
+      </tr>
+      <tr>
+        <td class="ts-bg-accent-color">Accent Color</td>
+        <td class="ts-bg-primary-text-color ts-text-text-primary-color">Primary Text Color</td>
+        <td class="ts-bg-secondary-text-color">Secondary Text Color</td>
+        <td class="ts-bg-divider-text-color">Divider Color</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h3>Borders</h3>
+    <p>
+      <span class="ts-border-dark-primary-color ts-border-solid-small ts-small-padding ts-small-margin">Dark Primary Color</span>
+
+      <span class="ts-border-primary-color ts-border-solid-small ts-small-padding ts-small-margin"> Primary Color</span>
+
+      <span class="ts-border-light-primary-color ts-border-solid-small ts-small-padding ts-small-margin">Light Primary Color</span>
+
+      <span class="ts-border-text-primary-color ts-border-solid-small ts-small-padding ts-small-margin ts-bg-primary-text-color ts-text-text-primary-color">Text Primary Color</span>
+
+    </p>
+    <h3>Background</h3>
+    <h3>Text</h3>
+  </section>
+</article>
+<hr>
+            <a name="#typography"></a>
+<article class="ts-text-container">
   <section class="ts-container">
     <h1>h1. Bootstrap heading
       <small>Secondary text</small>
@@ -24,6 +126,10 @@
     </blockquote>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   </section>
+</article>
+<hr>
+              <a name="#layout"></a>
+<article class="ts-text-container ts-height-100">
   <section class="ts-container">
     <h2>h2. Bootstrap heading
       <small>Secondary text</small>
@@ -38,6 +144,10 @@
     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   </section>
+</article>
+<hr>
+                <a name="#element"></a>
+<article class="ts-text-container ts-height-100">
   <section class="ts-text-container">
     <h4>h4. Bootstrap heading
       <small>Secondary text</small>
@@ -75,6 +185,10 @@
     </ol>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   </section>
+</article>
+<hr>
+                  <a name="#responsive"></a>
+<article class="ts-text-container">
   <section class="ts-container">
     <h5>h5. Bootstrap heading
       <small>Secondary text</small>
@@ -112,6 +226,10 @@
     </ol>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   </section>
+</article>
+<hr>
+                    <a name="#customize"></a>
+<article class="ts-text-container">
   <section class="ts-container">
     <h6>h6. Bootstrap heading
       <small>Secondary text</small>
@@ -119,22 +237,36 @@
     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   </section>
-  <script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+</article>
+<hr>
+                      <footer class="ts-row ts-serif-clean">
+  <div class="ts-col-span6 ts-text-small">
+    Curated with <a href="http://getperiodic.org" target="_blank">Periodic</a>
+  </div>
+  <div class="ts-col-span6 ts-pull-right ts-text-right ts-text-small">
+    <a href="https://github.com/typesettin/typesettin-style-guide" target="_blank">fork on github</a> | Typesettin &copy;
+    
+      2015
+  </div>
+</footer>
+</main>
+<!-- /minimal-container -->
+<script>
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-52892914-6', 'auto');
-  ga('send', 'pageview');
-  </script>
+ga('create', 'UA-52892914-6', 'auto');
+ga('send', 'pageview');
+</script>
 </body>
 
 </html>
