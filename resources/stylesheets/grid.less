@@ -158,9 +158,29 @@
     overflow: auto;
     overflow-x: hidden;
 }
-.ts-container-margin{
-    margin-top:5em;
-    margin-bottom:5em;
+.ts-container-margin-xx{
+    margin-top:@sizexx;
+    margin-bottom:@sizexx;
+}
+.ts-container-margin-xl{
+    margin-top:@sizexl;
+    margin-bottom:@sizexl;
+}
+.ts-container-margin-lg{
+    margin-top:@sizelg;
+    margin-bottom:@sizelg;
+}
+.ts-container-margin-md{
+    margin-top:@sizemd;
+    margin-bottom:@sizemd;
+}
+.ts-container-margin-sm{
+    margin-top:@sizesm;
+    margin-bottom:@sizesm;
+}
+.ts-container-margin-xs{
+    margin-top:@sizexs;
+    margin-bottom:@sizexs;
 }
 .ts-container-margin-auto{
     margin-left:auto;
@@ -169,11 +189,44 @@
 .ts-no-padding{
     padding: 0;
 }
-.ts-small-padding{
-    padding: 0.25em;
+.ts-padding-xx{
+    padding: @sizexx;
 }
-.ts-small-margin{
-    margin: 0.25em;
+.ts-padding-xl{
+    padding: @sizexl;
+}
+.ts-padding-lg{
+    padding: @sizelg;
+}
+.ts-padding-md{
+    padding: @sizemd;
+}
+.ts-padding-sm{
+    padding: @sizesm;
+}
+.ts-padding-xs{
+    padding: @sizexs;
+}
+.ts-no-margin{
+    margin: 0;
+}
+.ts-margin-xx{
+    margin: @sizexx;
+}
+.ts-margin-xl{
+    margin: @sizexl;
+}
+.ts-margin-lg{
+    margin: @sizelg;
+}
+.ts-margin-md{
+    margin: @sizemd;
+}
+.ts-margin-sm{
+    margin: @sizesm;
+}
+.ts-margin-xs{
+    padding: @sizexs;
 }
 .ts-small-spacing-padding{
     padding: .25em 0;
@@ -203,6 +256,14 @@
 
 .ts-position-relative{
     position: relative;
+}
+
+.ts-display-inline-block{
+    display: inline-block;
+}
+
+.ts-display-block{
+    display: block;
 }
 
 .ts-bottom{

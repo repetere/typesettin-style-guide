@@ -116,7 +116,7 @@ module.exports = function (grunt) {
 				files: [{
 					expand: true,
 					cwd: 'resources/template',
-					src: ['pages/*.ejs', 'index.ejs', '!shared/**/*.ejs'],
+					src: ['section/*.ejs', 'index.ejs', '!shared/**/*.ejs'],
 					dest: 'example',
 					ext: '.html'
 				}],
