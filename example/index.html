@@ -40,7 +40,7 @@
     </menuitem>
     <menuitem class="ts-pull-left">
       <ul class="ts-ul-inline-block ts-no-padding">
-        <li><a href="#top" class="ts-text-big ts-text-bold">Style Guide</a>
+        <li><a href="#top" class="ts-text-xl ts-text-bold">Style Guide</a>
         </li>
       </ul>
     </menuitem>
@@ -149,7 +149,12 @@
 
       <span class="ts-text-secondary-text-color example-color-bg">.ts-text-secondary-text-color</span>
       <span class="ts-text-divider-text-color example-color-bg">.ts-text-divider-text-color</span>
-
+    </p>
+    <h3>Shadows</h3>
+    <p>
+      <span class="ts-bg-primary-text-color example-color-bg ts-text-text-primary-color  ts-shadow"> .ts-shadow</span>
+      <span class="ts-bg-light-primary-color example-color-bg ts-shadow">.ts-shadow</span>
+      <span class="ts-border-light-primary-color example-color-border ts-shadow">.ts-shadow</span>
     </p>
   </section>
 </article>
@@ -158,9 +163,20 @@
 <article class="ts-text-container">
   <section>
     <h2>Typography
-      <small>Secondary text</small>
+      <small>fonts, sizes and alignment</small>
     </h2>
     <p>The default headings have a serif typeface (lyontext), the body copy uses a sans-serif typeface (potano).</p>
+  </section>
+  <section>
+    <h3>Text Size</h3>
+    <p>
+      <span class="ts-text-xs example-color-bg">.ts-text-xs</span>
+      <span class="ts-text-sm example-color-bg">.ts-text-sm</span>
+      <span class="ts-text-md example-color-bg">.ts-text-md</span>
+      <span class="ts-text-lg example-color-bg">.ts-text-lg</span>
+      <span class="ts-text-xl example-color-bg">.ts-text-xl</span>
+      <span class="ts-text-xx example-color-bg">.ts-text-xx</span>
+    </p>
   </section>
   <section>
     <h1>H1 Heading.</h1>
@@ -197,14 +213,6 @@
     </code>
   </section>
   <section>
-    <h3>Inline Elements </h3>
-    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-
-    <blockquote>
-      <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-    </blockquote>
-  </section>
-  <section>
     <h3>Alignment Classes </h3>
     <h6>.ts-text-left</h6>
     <p class="ts-text-left">Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -229,7 +237,7 @@
       <li>Donec id elit non mi porta gravida at eget metus.</li>
       <li>Duis mullis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
     </ul>
-    <h6>Horizontal unordered List &lt;ul.ts-ul-inline-block&gt; </h6>
+    <h6>Horizontal Unordered List &lt;ul.ts-ul-inline-block&gt; </h6>
     <ul class="ts-ul-inline-block ts-li-horz-spacing ts-no-padding">
       <li class="ts-border-solid-micro">Maecenas</li>
       <li class="ts-border-solid-micro">Sed</li>
@@ -240,25 +248,102 @@
 </article>
 <hr>
               <a name="#layout"></a>
-<article class="ts-text-container ts-height-100">
+<article class="ts-text-container">
   <section class="ts-container">
-    <h2>h2. Bootstrap heading
-      <small>Secondary text</small>
+    <h2>Layout
+      <small>Grid System, and positioning</small>
     </h2>
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    <p>There's a basic 12 column grid that's percent based. Rows and columns can be nested, and the box sizing property is set to:
+      <span class="ts-code">border-box</span>
+    </p>
   </section>
   <section class="ts-container">
-    <h3>h3. Bootstrap heading
-      <small>Secondary text</small>
-    </h3>
-    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    <h6>Basic Grid
+      <small>.ts-row</small>
+    </h6>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span12">
+        <strong>Example: 12 columns</strong>
+      </div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <div class="ts-col-span1">.ts-col-span1</div>
+      <textarea class="ts-col-span12 ts-sans-serif example-grid-border ts-bg-light-primary-color">
+        <div class="ts-row">
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+          <div class="ts-col-span1">.ts-col-span1</div>
+        </div>
+      </textarea>
+    </div>
+    <div class="ts-row">
+
+    </div>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span12">
+        <strong>Example: Mixed column size examples</strong>
+      </div>
+      <div class="ts-col-span2">.ts-col-span2</div>
+      <div class="ts-col-span2">.ts-col-span2</div>
+      <div class="ts-col-span4">.ts-col-span4</div>
+      <div class="ts-col-span2">.ts-col-span2</div>
+      <div class="ts-col-span2">.ts-col-span2</div>
+    </div>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span3">.ts-col-span3</div>
+      <div class="ts-col-span6">.ts-col-span6</div>
+      <div class="ts-col-span3">.ts-col-span3</div>
+    </div>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span8">.ts-col-span8</div>
+      <div class="ts-col-span4">.ts-col-span4</div>
+    </div>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span9">.ts-col-span9</div>
+      <div class="ts-col-span3">.ts-col-span3</div>
+    </div>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span7">.ts-col-span7</div>
+      <div class="ts-col-span5">.ts-col-span5</div>
+    </div>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span10">.ts-col-span10</div>
+      <div class="ts-col-span2">.ts-col-span2</div>
+    </div>
+    <div class="ts-row ts-text-xs example-grid-border ts-container-margin-lg">
+      <div class="ts-col-span12">.ts-col-span12</div>
+    </div>
   </section>
 </article>
 <hr>
                 <a name="#element"></a>
 <article class="ts-text-container ts-height-100">
+  <section>
+    <h3>Inline Elements </h3>
+    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+    <blockquote>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    </blockquote>
+  </section>
   <section class="ts-text-container">
     <h4>h4. Bootstrap heading
       <small>Secondary text</small>
@@ -351,10 +436,10 @@
 </article>
 <hr>
                       <footer class="ts-row ts-serif-clean">
-  <div class="ts-col-span6 ts-text-small">
+  <div class="ts-col-span6 ts-text-sm">
     Curated with <a href="http://getperiodic.org" target="_blank">Periodic</a>
   </div>
-  <div class="ts-col-span6 ts-pull-right ts-text-right ts-text-small">
+  <div class="ts-col-span6 ts-pull-right ts-text-right ts-text-sm">
     <a href="https://github.com/typesettin/typesettin-style-guide" target="_blank">fork on github</a> | Typesettin &copy;
     
       2015
