@@ -1,18 +1,27 @@
 'use strict';
+var navlinks;
 
-// var ComponentTabs = require('../../index'),
-// 	componentTab1;
+var navlinkclickhandler = function (e) {
+	var etarget = e.target,
+		etargethref = etarget.getAttribute('href'),
+		anchorlink,
+		anchorlinkTop;
 
-// var tabEvents = function () {
-// 	componentTab1.on('tabsShowIndex', function (index) {
-// 		console.log('tab show index', index);
-// 	});
-// };
+	if (etargethref.charAt(0) === '#') {
+		anchorlink = document.querySelector('a[name="' + etargethref + '"]');
+		if (anchorlink) {
+			anchorlinkTop = anchorlink.getBoundingClientRect().top;
+			console.log('anchorlinkTop', anchorlinkTop);
+			console.log('window.scrollY', window.scrollY);
+			window.scrollTo(0, (anchorlinkTop + window.scrollY));
+		}
+	}
+};
 
-// window.addEventListener('load', function () {
-// 	var tabelement = document.getElementById('tabs');
-// 	componentTab1 = new ComponentTabs(tabelement);
-// 	tabEvents();
+window.addEventListener('load', function () {
+	navlinks = document.querySelector('#navlinks');
 
-// 	window.componentTab1 = componentTab1;
-// }, false);
+	if (navlinks) {
+		navlinks.addEventListener('click', navlinkclickhandler, false);
+	}
+});
