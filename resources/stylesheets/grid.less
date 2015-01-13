@@ -166,6 +166,13 @@
     overflow: auto;
     overflow-x: hidden;
 }
+.ts-no-y-overflow{
+    overflow: auto;
+    overflow-y: hidden;
+}
+.ts-no-overflow{
+    overflow: hidden;
+}
 .ts-container-margin-xx{
     margin-top:@sizexx;
     margin-bottom:@sizexx;
@@ -236,11 +243,41 @@
 .ts-margin-xs{
     padding: @sizexs;
 }
-.ts-small-spacing-padding{
-    padding: .25em 0;
+.ts-xs-spacing-padding{
+    padding: @sizexs 0;
 }
-.ts-small-spacing-margin{
-    margin: .25em 0;
+.ts-small-spacing-padding{
+    padding: @sizesm 0;
+}
+.ts-md-spacing-padding{
+    padding: @sizemd 0;
+}
+.ts-lg-spacing-padding{
+    padding: @sizelg 0;
+}
+.ts-xl-spacing-padding{
+    padding: @sizexl 0;
+}
+.ts-xx-spacing-padding{
+    padding: @sizexx 0;
+}
+.ts-xs-spacing-margin{
+    margin: @sizexs 0;
+}
+.ts-sm-spacing-margin{
+    margin: @sizesm 0;
+}
+.ts-md-spacing-margin{
+    margin: @sizemd 0;
+}
+.ts-lg-spacing-margin{
+    margin: @sizelg 0;
+}
+.ts-xl-spacing-margin{
+    margin: @sizexl 0;
+}
+.ts-xx-spacing-margin{
+    margin: @sizexx 0;
 }
 .ts-ul-inline-block{
     li{
@@ -274,11 +311,11 @@
     display: block;
 }
 
-.ts-bottom{
+.ts-position-bottom{
     bottom: 0;
 }
 
-.ts-top{
+.ts-position-top{
     top: 0;
 }
 
@@ -296,6 +333,12 @@
 }
 .ts-clear-both{
     clear: both;
+}
+.ts-clear-left{
+    clear: left;
+}
+.ts-clear-right{
+    clear: right;
 }
 .ts-pull-left{
     float: left;
