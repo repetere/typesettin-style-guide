@@ -1,8 +1,8 @@
 {
   "title": "Typesettin Style Guide",
   "name": "typesettin-style-guide",
-  "description": "lightweight css framework with minimal styling",
-  "version": "1.3.0",
+  "description": "Stylie is a barebones css framework generator for professionally designed style guides (depreciated, use stylie)",
+  "version": "2.0.0",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
